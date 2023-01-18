@@ -1,0 +1,193 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed, sans-serief";
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 11px;
+}
+
+li:hover {
+  background-color: rgb(208, 208, 208);
+  transition: 0.7s;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 7px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-link {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 65px;
+}
+
+.headline-btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 5px, 25px;
+  border-radius: 10px;
+  border: 2px solid rgb(4, 84, 107);
+  width: 130px;
+  margin: auto;
+}
+
+.headline-btn:hover {
+  background-color: rgb(8, 178, 161);
+  transition: 0.7s;
+}
+
+.headline {
+  background-image: url(../assets/background\ 1.png);
+  background-size: cover;
+  margin-top: 0;
+  height: 200px;
+}
+
+.new-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.new-p {
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  background-color: #eee;
+  padding: 20px;
+  width: 281px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  box-shadow: 10px 10px 20px #434040;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-sub,
+.info-p {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.info-logo {
+  display: flex;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+.info-title {
+  text-align: center;
+  margin: auto;
+}
+
+.calc {
+  margin: 0 auto;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial;
+  padding: 18px;
+  box-shadow: 10px 10px 10px #f4f4f4;
+}
+
+.calc-screen {
+  height: 125px;
+  padding: 10;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 25px;
+}
+
+.calc-screen p {
+  text-align: right;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.title-cal {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "ac plus-minus percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+  grid-gap: 7px;
+  justify-items: center;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 34px;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.btn:active {
+  filter: brightness(90%);
+}
+
+.btn.bg-grey {
+  background: #a6a6a6;
+}
+
+.btn.bg-orange {
+  background: #ff9501;
+}
+/* 
+@media (min-width: 845px) {
+  li {
+    float: left;
+    margin-top: 60px;
+    margin-right: 10px;
+    text-align: center;
+  }
+} */
