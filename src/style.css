@@ -11,13 +11,13 @@ li {
   margin-bottom: 11px;
 }
 
-li:hover {
+/* li:hover {
   background-color: rgb(208, 208, 208);
   transition: 0.7s;
   margin-left: 400px;
   margin-right: 400px;
   border-radius: 7px;
-}
+} */
 
 a {
   text-decoration: none;
@@ -86,6 +86,11 @@ a {
   text-align: center;
 }
 
+.info {
+  background-image: linear-gradient(#b6eaf7, #cde33c);
+  height: 65vh;
+}
+
 .card-sub,
 .info-p {
   text-align: center;
@@ -102,6 +107,18 @@ a {
 .info-title {
   text-align: center;
   margin: auto;
+}
+footer {
+  background-color: #000;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.container-cal {
+  margin-top: 120px;
 }
 
 .calc {
@@ -182,12 +199,50 @@ a {
 .btn.bg-orange {
   background: #ff9501;
 }
-/* 
-@media (min-width: 845px) {
-  li {
-    float: left;
-    margin-top: 60px;
-    margin-right: 10px;
-    text-align: center;
+
+@media (min-width: 480px) {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-} */
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+
+  li:hover {
+    background-color: #a6a6a6;
+    transition: 0.7s;
+  }
+}
+
+@media (min-width: 780px) {
+  .container_card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .card {
+    width: 50%;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    background-color: #cccc;
+  }
+
+  .container-info {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .info-p {
+    margin-top: 80px;
+  }
+}
